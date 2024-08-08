@@ -47,20 +47,21 @@ python main.py
 - **Commandes Utilitaires :**
   - `ping` : Affiche la latence du bot.
   - `prefix` : Change le préfixe de commande pour le serveur et met à jour le fichier `.env`.
+    - Utilisation : `prefix <préfix>`
   - `adminservers` : Liste les serveurs où vous avez des permissions administratives et le nombre de membres.
 
 - **Commandes Vocales :**
   - `joinvc` : Rejoint un canal vocal spécifié par son ID.
+    - Utilisation : `joinvc <ID>`
   - `leavevc` : Quitte le canal vocal actuel.
   - `autojoin` : Définit un canal vocal que le bot doit rejoindre automatiquement au démarrage.
+    - Utilisation : `autojoin <ID>`
 
 - **Commandes Rich Presence (RPC) :**
   - `setrpc` : Définit le RPC du bot.
     - Utilisation : `setrpc playing <nom_du_jeu>` ou `setrpc streaming <nom_du_stream>`
   - `listrpc` : Affiche la liste des types de RPC disponibles.
-    - Utilisation : `listrpc`
   - `remrpc` : Supprime le RPC actuel.
-    - Utilisation : `remrpc`
 
 ## Contributions
 
