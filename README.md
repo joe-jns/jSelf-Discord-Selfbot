@@ -1,5 +1,3 @@
-### README.md
-
 # jSelf - Your Personal Discord Selfbot
 
 Welcome to **jSelf**, your personal Discord selfbot. Follow the instructions below to set up and run the bot on your machine.
