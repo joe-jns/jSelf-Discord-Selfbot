@@ -1,1 +1,17 @@
-.env
+# Ignorer les dossiers __pycache__
+__pycache__/
+
+# Ignorer les fichiers spécifiques à l'OS
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers de configuration de l'éditeur
+.vscode/
+.idea/
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers d'environnement virtuel
+venv/
+.env/
