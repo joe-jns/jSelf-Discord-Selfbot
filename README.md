@@ -60,10 +60,6 @@ python main.py
 
 Feel free to fork this repository and make your own modifications. If you have any suggestions or find any issues, please open an issue on the [GitHub repository](https://github.com/JnsJoe/jSelf).
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ---
 
 Thank you for using **jSelf**. Enjoy your enhanced Discord experience!
