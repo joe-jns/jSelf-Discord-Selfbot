@@ -1,65 +1,73 @@
-# jSelf - Your Personal Discord Selfbot
+# jSelf - Votre Selfbot Discord Personnel
 
-Welcome to **jSelf**, your personal Discord selfbot. Follow the instructions below to set up and run the bot on your machine.
+Bienvenue sur **jSelf**, votre selfbot Discord personnel. Suivez les instructions ci-dessous pour configurer et exécuter le bot sur votre machine.
 
-## Prerequisites
+## Prérequis
 
-Ensure you have the following installed on your machine:
+Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 - Python 3.6+
-- pip (Python package installer)
+- pip (installateur de paquets Python)
 
-## Setup Instructions
+## Instructions d'installation
 
-### Step 1: Run the Setup Script
+### Étape 1 : Exécuter le Script de Configuration
 
-To get started, run the `setup.bat` script. This will create a `.env` file and install all necessary dependencies.
+Pour commencer, exécutez le script `setup.bat`. Cela créera un fichier `.env` et installera toutes les dépendances nécessaires.
 
 ```bash
 setup.bat
 ```
 
-### Step 2: Configure the .env File
+### Étape 2 : Configurer le Fichier .env
 
-After running the setup script, configure the `.env` file with your Discord account token and preferred command prefix. You can find the `.env` file in the root directory of the project.
+Après avoir exécuté le script de configuration, configurez le fichier `.env` avec votre token de compte Discord et le préfixe de commande préféré. Vous pouvez trouver le fichier `.env` dans le répertoire racine du projet.
 
 ```plaintext
-DISCORD_TOKEN=Your_Discord_Account_Token_Here
-COMMAND_PREFIX=Your_Command_Prefix_Here
-AUTOJOIN_CHANNEL_ID=Your_Autojoin_Channel_ID_Here (optional)
+DISCORD_TOKEN=Votre_Token
+COMMAND_PREFIX=Votre_Préfixe
+AUTOJOIN_CHANNEL_ID=ID_De_Votre_Channel_Autojoin (optionel)
 ```
 
-- `DISCORD_TOKEN`: Your Discord account token. **Important: This is your personal token and not a bot token.**
-- `COMMAND_PREFIX`: The prefix you want to use for your bot commands.
-- `AUTOJOIN_CHANNEL_ID`: The ID of the voice channel you want the bot to join automatically upon startup (optional).
+- `DISCORD_TOKEN` : Votre token de compte Discord. **Important : Il s'agit de votre token personnel et non d'un token de bot.**
+- `COMMAND_PREFIX` : Le préfixe que vous souhaitez utiliser pour les commandes de votre bot.
+- `AUTOJOIN_CHANNEL_ID` : L'ID du canal vocal que vous souhaitez que le bot rejoigne automatiquement au démarrage (optionnel).
 
-### Step 3: Run the Bot
+### Étape 3 : Exécuter le Bot
 
-Once you have configured the `.env` file, you can start the bot by running the following command in your terminal:
+Une fois que vous avez configuré le fichier `.env`, vous pouvez démarrer le bot en exécutant la commande suivante dans votre terminal :
 
 ```bash
 python main.py
 ```
 
-## Features
+## Fonctionnalités
 
-### Available Commands
+### Commandes Disponibles
 
-- **Utility Commands:**
-  - `ping`: Displays the bot's latency.
-  - `prefix`: Changes the command prefix for the server and updates the `.env` file.
-  - `adminservers`: Lists the servers where you have administrative permissions and the number of members.
+- **Commandes Utilitaires :**
+  - `ping` : Affiche la latence du bot.
+  - `prefix` : Change le préfixe de commande pour le serveur et met à jour le fichier `.env`.
+  - `adminservers` : Liste les serveurs où vous avez des permissions administratives et le nombre de membres.
 
-- **Vocal Commands:**
-  - `joinvc`: Joins a specified voice channel by ID.
-  - `leavevc`: Leaves the current voice channel.
-  - `autojoin`: Sets a voice channel for the bot to join automatically on startup.
+- **Commandes Vocales :**
+  - `joinvc` : Rejoint un canal vocal spécifié par son ID.
+  - `leavevc` : Quitte le canal vocal actuel.
+  - `autojoin` : Définit un canal vocal que le bot doit rejoindre automatiquement au démarrage.
+
+- **Commandes Rich Presence (RPC) :**
+  - `setrpc` : Définit le RPC du bot.
+    - Utilisation : `setrpc playing <nom_du_jeu>` ou `setrpc streaming <nom_du_stream>`
+  - `listrpc` : Affiche la liste des types de RPC disponibles.
+    - Utilisation : `listrpc`
+  - `remrpc` : Supprime le RPC actuel.
+    - Utilisation : `remrpc`
 
 ## Contributions
 
-Feel free to fork this repository and make your own modifications. If you have any suggestions or find any issues, please open an issue on the [GitHub repository](https://github.com/JnsJoe/jSelf).
+N'hésitez pas à forker ce dépôt et à apporter vos propres modifications. Si vous avez des suggestions ou si vous trouvez des problèmes, veuillez ouvrir une issue sur le [dépôt GitHub](https://github.com/JnsJoe/jSelf).
 
 ---
 
-Thank you for using **jSelf**. Enjoy your enhanced Discord experience!
+Merci d'utiliser **jSelf**. Profitez de votre expérience Discord améliorée !
 
 ---
