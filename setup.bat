@@ -10,6 +10,7 @@ echo.
 echo DISCORD_TOKEN=Ton Token > .env
 echo COMMAND_PREFIX=Ton Prefix >> .env
 echo AUTOJOIN_CHANNEL_ID= >> .env
+echo SAFE_USER_ID= >> .env
 
 :: Installer les dépendances depuis requirements.txt
 pip install -r requirements.txt

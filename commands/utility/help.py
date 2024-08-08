@@ -15,27 +15,35 @@ class CustomHelpCommand(commands.Cog):
         categories = {
             'utility': 'Commandes utilitaires',
             'vocal': 'Commandes de salon vocal',
-            'admin': 'Commandes administratives'
+            'admin': 'Commandes administratives',
+            'rpc': 'Commandes Rich Presence (RPC)'
         }
 
         if category:
             if category == 'utility':
                 help_text = """
-                **Commandes utilitaires :**
-                - `ping` : Affiche le ping du bot.
-                - `prefix` : Change le préfixe des commandes pour ce serveur et le stocke dans le fichier .env
+**Commandes utilitaires :**
+- `ping` : Affiche le ping du bot.
+- `prefix` : Change le préfixe des commandes pour ce serveur et le stocke dans le fichier .env
                 """
             elif category == 'vocal':
                 help_text = """
-                **Commandes de salon vocal :**
-                - `joinvc` : Fait rejoindre le bot à un canal vocal spécifié par son ID.
-                - `leavevc` : Fait quitter le bot du canal vocal.
-                - `autojoin` : Définit un canal vocal pour rejoindre automatiquement au démarrage du bot.
+**Commandes de salon vocal :**
+- `joinvc` : Fait rejoindre le bot à un canal vocal spécifié par son ID.
+- `leavevc` : Fait quitter le bot du canal vocal.
+- `autojoin` : Définit un canal vocal pour rejoindre automatiquement au démarrage du bot.
                 """
             elif category == 'admin':
                 help_text = """
-                **Commandes administratives :**
-                - `adminservers` : Affiche la liste des serveurs où vous avez les permissions administratives et le nombre de membres.
+**Commandes administratives :**
+- `adminservers` : Affiche la liste des serveurs où vous avez les permissions administratives et le nombre de membres.
+                """
+            elif category == 'rpc':
+                help_text = """
+**Commandes Rich Presence (RPC) :**
+- `setrpc` : Définit le RPC du bot. Ex : setrpc playing Fortnite
+- `listrpc` : Affiche la liste des types de RPC disponibles.
+- `remrpc` : Supprime le RPC actuel.
                 """
         else:
             for cat, description in categories.items():
